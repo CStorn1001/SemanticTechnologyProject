@@ -1,0 +1,11 @@
+<http://example.org/Kevin%20Walker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/student>.
+<http://example.org/Kevin%20Walker> <http://schema.org/birthDate> "2001-07-24"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/Kevin%20Walker> <http://schema.org/addressLocality> <http://example.org/Epping>.
+<http://example.org/Kevin%20Walker> <http://schema.org/workLocation> <http://example.org/ALDI>.
+<http://example.org/Kevin%20Walker> <http://xmlns.com/foaf/0.1/knows> <http://example.org/Alice%20Miller>.
+<http://example.org/Kevin%20Walker> <http://schema.org/study> <http://example.org/Macquarie%20University>.
+<http://example.org/Kevin%20Walker> <http://schema.org/identifier> "40048822"^^<http://www.w3.org/2001/XMLSchema#postiveInteger>.
+<http://example.org/Kevin%20Walker> <http://schema.org/courseCode> <http://example.org/COMP3100>.
+<http://example.org/Kevin%20Walker> <http://schema.org/courseCode> <http://example.org/COMP3220>.
+<http://example.org/Alice%20Miller> <http://schema.org/alumniOf> <http://example.org/Macquarie%20University>.
+<http://example.org/Alice%20Miller> <http://xmlns.com/foaf/0.1/knows> <http://example.org/Kevin%20Walker>.

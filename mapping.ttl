@@ -1,0 +1,78 @@
+@base  <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<TriplesMap1> 
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_1.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate rdf:type ; rr:objectMap [ rr:template "http://example.org/{target}" ] ].
+
+<TriplesMap2>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_2.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate schema:birthDate ; rr:objectMap [ rml:reference "target" ; rr:datatype xsd:date ;  rr:objectMap [ rr:template xsd:date ] ; ] ].
+
+<TriplesMap3>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_3.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate schema:addressLocality ; rr:objectMap [ rr:template "http://example.org/{target}" ] ].
+
+<TriplesMap4>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_4.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate schema:workLocation ; rr:objectMap [ rr:template "http://example.org/{target}" ] ].
+
+<TriplesMap5>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_5.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate foaf:knows ; rr:objectMap [ rr:template "http://example.org/{target}" ] ].
+
+<TriplesMap6>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_6.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate schema:study ; rr:objectMap [ rr:template "http://example.org/{target}" ] ].
+
+<TriplesMap7>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_7.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate schema:identifier ; rr:objectMap [ rml:reference "target" ; rr:datatype xsd:postiveInteger ;  rr:objectMap [ rr:template xsd:positiveInteger ] ; ] ].
+
+<TriplesMap8>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_8.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate schema:courseCode ; rr:objectMap [ rr:template "http://example.org/{target}" ] ].
+
+<TriplesMap9>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_9.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate schema:courseCode ; rr:objectMap [ rr:template "http://example.org/{target}" ] ].
+
+<TriplesMap10>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_10.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate schema:alumniOf ; rr:objectMap [ rr:template "http://example.org/{target}" ] ].
+
+<TriplesMap11>
+  a rr:TriplesMap;
+  rml:logicalSource [ rml:source "row_11.csv"; rml:referenceFormulation ql:CSV ; ];
+  rr:subjectMap [ rr:template "http://example.org/{source}" ];
+  rr:predicateObjectMap [ rr:predicate foaf:knows ; rr:objectMap [ rr:template "http://example.org/{target}" ] ].
+
+
+
+ 
